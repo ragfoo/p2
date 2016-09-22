@@ -26,7 +26,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
   </head>
 <body>
 	<div class='container'>
-		<h1>Shakespearian Password Generator</h1>
+		<h1 style="font-family:courier;">Shakespearian Password Generator</h1>
 
 		<p class='password'>
 			<?php
