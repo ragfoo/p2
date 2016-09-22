@@ -58,7 +58,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	
 
 	
-	<img class="img-responsive" src="/img/shakespeare.jpg" alt="shakespeare" width="2000" height="345">
+	<img class="img-responsive" src="img/shakespeare.jpg" alt="shakespeare" width="2000" height="345">
 		
 	</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
