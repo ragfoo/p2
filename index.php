@@ -16,11 +16,11 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	<form method='POST' action='index.php'>
 	    Number of Words<br>
 	    <input type='text' name='word_count'><br>
-	    <input type='submit' value='Otra Mas'><br>
+	    <input type='submit' value='Another'><br>
 	</form>
 		<?php
 		
-			echo generatePassword(5);
+			echo generatePassword($_POST['word_count']);
 		?>
 </body>
 </html>
