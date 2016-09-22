@@ -18,11 +18,9 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	    <input type='text' name='word_count'><br>
 	    <input type='submit' value='Otra Mas'><br>
 	</form>
-	<pre>
 		<?php
 		
 			echo generatePassword(5);
-		    print_r($testVariable); ?>
-	</pre>
+		?>
 </body>
 </html>
