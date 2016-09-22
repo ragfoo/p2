@@ -14,16 +14,15 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
 <body>
 	<form method='POST' action='index.php'>
-	    Enter 5 contestants<br>
-	    <input type='text' name='contestant1'><br>
-	    <input type='text' name='contestant2'><br>
-	    <input type='text' name='contestant3'><br>
-	    <input type='text' name='contestant4'><br>
-	    <input type='text' name='contestant5'><br>
-	    <input type='submit' value='Pick a winner!'><br>
+	    Number of Words<br>
+	    <input type='text' name='word_count'><br>
+	    <input type='submit' value='Otra Mas'><br>
 	</form>
 	<pre>
-	    <?php print_r($_POST); ?>
+		<?php
+		
+			echo $password;
+		    print_r($testVariable); ?>
 	</pre>
 </body>
 </html>
