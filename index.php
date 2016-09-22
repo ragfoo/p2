@@ -21,7 +21,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	<pre>
 		<?php
 		
-			echo $password;
+			echo generatePassword(5);
 		    print_r($testVariable); ?>
 	</pre>
 </body>
