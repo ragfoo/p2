@@ -2,7 +2,14 @@
 error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
 ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 ?>
-
+<script>
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}    
+</script>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +45,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 			<p class='options'>
 
 				<label for='word_count'>Number of Words</label>
-				<input maxlength=1 type='text' name='word_count' id='word_count' value=<?php echo "\"".$wordCount."\"" ?> >  (Max 9)
+				<input maxlength=1 type='text' name='word_count' id='word_count' value=<?php echo "\"".$wordCount."\"" ?> onkeypress="return isNumberKey(event)">  (Max 9)
 				<br>
 
 				<input type='checkbox' name='add_number' id='add_number' <?php if ($addNumber == 'on'){echo 'checked';}?>>
