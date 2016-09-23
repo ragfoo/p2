@@ -37,7 +37,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 		<form method='POST' action='index.php'>
 			<p class='options'>
 
-				<label for='number_of_words'>Number of Words</label>
+				<label for='word_count'>Number of Words</label>
 				<input maxlength=1 type='text' name='word_count' id='word_count' value=<?php echo "\"".$wordCount."\"" ?> >  (Max 9)
 				<br>
 
